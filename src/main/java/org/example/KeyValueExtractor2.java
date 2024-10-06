@@ -3,7 +3,10 @@ package org.example;
 import java.util.HashMap;
 import java.util.Map;
 
-public class KeyValueExtractor {
+
+// User will pass inputText[raw data], and key[eg. Application Number],
+// based on this it should search value and return .
+public class KeyValueExtractor2 {
 
     public static Map<String, String> extractKeyValuePairs(String inputText) {
         Map<String, String> keyValueMap = new HashMap<>();
@@ -35,7 +38,7 @@ public class KeyValueExtractor {
 
 // for testing
         String inputText2 = "OMB 3060-123\n" +
-                "Application Number 1234\n" +
+                "Application Number1 1234\n" +
                 "ApplicationNumber2 3456\n" +
                 "First Name Anil\n" +
                 "Billed Entity Number 1122\n" +
