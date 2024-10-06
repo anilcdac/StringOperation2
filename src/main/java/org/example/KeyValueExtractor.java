@@ -13,7 +13,7 @@ public class KeyValueExtractor {
 
         for (String line : lines) {
             // Split each line by "=" to get key and value
-            String[] parts = line.split("=", 2);  // Limit to 2 parts to avoid issues if value contains "="
+            String[] parts = line.split(" ", 2);  // Limit to 2 parts to avoid issues if value contains "="
 
             if (parts.length == 2) {
                 String key = parts[0].trim();
