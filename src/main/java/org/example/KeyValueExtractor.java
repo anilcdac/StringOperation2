@@ -33,8 +33,24 @@ public class KeyValueExtractor {
         // Example input text
         String inputText = "name=John Doe\nage=29\nemail=john.doe@example.com";
 
+// for testing
+        String inputText2 = "OMB 3060-123\n" +
+                "Application Number 1234\n" +
+                "ApplicationNumber2 3456\n" +
+                "First Name Anil\n" +
+                "Billed Entity Number 1122\n" +
+                "Application Type Job";
+
+//        3rd scenario inputText3 has value in next line,
+        String inputText3 =  "Application Number\n" +
+                "1234\n" +
+                "First Name \n" +
+                "Anil";
+
+
+
         // Extract key-value pairs
-        Map<String, String> keyValuePairs = extractKeyValuePairs(inputText);
+        Map<String, String> keyValuePairs = extractKeyValuePairs(inputText2);
 
         // Print the key-value pairs
         for (Map.Entry<String, String> entry : keyValuePairs.entrySet()) {
